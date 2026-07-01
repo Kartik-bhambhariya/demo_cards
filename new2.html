@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 card</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        
+      }
+      *{
+        padding: 0;
+        margin: 0;
+        
+        box-sizing: border-box;
+      }
+      
+      .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(134deg, rgb(11, 11, 35), rgb(98, 84, 222));
+      }
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .content {
+        height: 400px;
+        width: 280px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 2px rgb(46, 46, 75);
+        border-radius: 10px;
+        transition: 0.6s;
+         /* background: linear-gradient(120deg,rgb(111, 111, 183),rgb(3, 3, 133)); */
+        background: linear-gradient(150deg, rgb(234, 234, 235), rgb(186, 177, 177));
+      }
+      .content:hover{
+        color: white;
+        transform: translateY(-8px);
+        /* box-shadow: 2px 4px 2px rgb(16, 6, 80); */
+               box-shadow: 2px 4px 2px rgb(158, 156, 170);
+
+          /* background: linear-gradient(150deg, rgb(234, 234, 235), rgb(186, 177, 177)); */
+        /* background: linear-gradient(120deg,rgb(111, 111, 183),rgb(78, 78, 95)); */
+              background: linear-gradient(120deg, rgb(68, 68, 208), rgb(32, 12, 95));
+
+      }
+
+      .img img {
+
+        height: 150px;
+        width: 180px;
+        object-fit: contain;
+        border: 0px solid black;
+      }
+      .title{
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        margin: 10px 0;
+        object-fit: contain;
+      }
+      .sub-title{
+        margin-bottom: 20px;
+        line-height: 1.4;
+        height: 80px;
+        font-size: 14px;
+        width: 240px;
+        text-align: center;
+
+      }
+      .btn{
+        display: flex;
+        gap: 10px;
+      }
+      .btn button{
+        padding: 12px 18px;
+        color: aliceblue;
+        border-radius: 8px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: rgb(102, 102, 212)
+      }
+      .btn button:hover{
+       
+      background: linear-gradient(120deg, rgb(68, 68, 208), rgb(32, 12, 95));
+        
+        border:1px solid rgb(255, 255, 255);
+      }
+      #b{
+        width: 90px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cards">
+        <div class="content">
+          <div class="img">
+            <img
+              src="Img/128a686f-d7d0-4042-bb32-1aec12343877_removalai_preview.png"
+              alt=""
+            />
+          </div>
+          <div class="title">Gaming Mouse</div>
+          <div class="sub-title">
+            A high-precision gaming mouse with adjustable DPI, ergonomic design,
+            RGB lighting, and programmable buttons for enhanced gameplay.
+          </div>
+          <div class="btn">
+            <button id="b">Buy</button>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img">
+            <img
+              src="Img/anthony-roberts-5WJhuXkqCkc-unsplash-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="title">CPU (Desktop Processor)</div>
+          <div class="sub-title">
+            A powerful processor designed for fast computing, smooth
+            multitasking, gaming, and high-performance applications.
+          </div>
+          <div class="btn">
+            <button id="b">Buy</button>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img">
+            <img
+              src="Img/f682c893-c7ca-4873-a1c3-97c07f4d83e6_removalai_preview.png"
+              alt=""
+            />
+          </div>
+          <div class="title">Gaming Keyboard</div>
+          <div class="sub-title">
+            A durable gaming keyboard featuring responsive keys, RGB
+            backlighting, anti-ghosting technology, and fast performance.
+          </div>
+          <div class="btn">
+            <button id="b">Buy</button>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img">
+            <img src="Img/nik-ads33nL7V4k-unsplash.png" alt="" />
+          </div>
+          <div class="title">PlayStation 5 (PS5)</div>
+          <div class="sub-title">
+            A next-generation gaming console with ultra-fast SSD, stunning 4K
+            graphics, immersive audio, and lightning-fast gameplay.
+          </div>
+          <div class="btn">
+            <button id="b">Buy</button>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
